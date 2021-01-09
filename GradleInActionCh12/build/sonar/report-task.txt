@@ -1,0 +1,6 @@
+projectKey=com.manning.gia:GradleInActionCh12
+serverUrl=http://localhost:9000
+serverVersion=6.7.1.35068
+dashboardUrl=http://localhost:9000/dashboard/index/com.manning.gia:GradleInActionCh12
+ceTaskId=AWCI6LKfZmW5dPXc29_N
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWCI6LKfZmW5dPXc29_N

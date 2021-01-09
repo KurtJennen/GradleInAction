@@ -1,0 +1,110 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\build\classes\main
+compile options:
+2 items
+0 -> -deprecation
+1 -> -unchecked
+javac options:
+9 items
+0 -> -source
+1 -> 1.8
+2 -> -target
+3 -> 1.8
+4 -> -d
+5 -> I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\build\classes\main
+6 -> -g
+7 -> -proc:none
+8 -> -XDuseUnsharedTable=true
+compiler version:
+1 items
+0 -> 2.12.4
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+1 items
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\build\classes\main\model\ToDoItem.class
+binary dependencies:
+2 items
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> C:\Program Files\Java\jdk1.8.0_152\jre\lib\rt.jar
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> C:\Users\Kurt\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.4\7663f74ef944453c86cc7e6597ed33e9281f6412\scala-library-2.12.4.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+1 items
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> model.ToDoItem
+used names:
+24 items
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> &&
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> <init>
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> ==
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> Any
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> Boolean
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> Long
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> Ordered
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> Predef
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> String
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> ToDoItem
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> asInstanceOf
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> compare
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> completed
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> completed_=
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> id
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> id_=
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> isInstanceOf
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> longWrapper
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> model
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> name
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> name_=
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> package
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> scala
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> that
+product stamps:
+1 items
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\build\classes\main\model\ToDoItem.class -> lastModified(1514022220000)
+source stamps:
+1 items
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> hash(e5e38ddec3f7f4da35346677be12ec9cf6f208af)
+binary stamps:
+2 items
+C:\Program Files\Java\jdk1.8.0_152\jre\lib\rt.jar -> lastModified(1511085687477)
+C:\Users\Kurt\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.4\7663f74ef944453c86cc7e6597ed33e9281f6412\scala-library-2.12.4.jar -> lastModified(1514022163211)
+class names:
+2 items
+C:\Program Files\Java\jdk1.8.0_152\jre\lib\rt.jar -> java.lang.Object
+C:\Users\Kurt\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.4\7663f74ef944453c86cc7e6597ed33e9281f6412\scala-library-2.12.4.jar -> scala.math.Ordered
+internal apis:
+1 items
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBsVD2RAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cB9vBHl0AAZub3RpZnlzcQB+AAywngVkdAALaXNDb21wbGV0ZWRzcQB+AAyG2t4GdAAEbmFtZXNxAH4ADCqcEet0AAR3YWl0c3EAfgAMb2V5D3QAAjw9c3EAfgAMpbMmCnQADSRhc0luc3RhbmNlT2ZzcQB+AAyUswibdAAHc2V0TmFtZXNxAH4ADGVBjQB0AAVzZXRJZHNxAH4ADD9tTYV0AAZlcXVhbHNzcQB+AAzSJqjAdAAMYXNJbnN0YW5jZU9mc3EAfgAMRuozWHQAATxzcQB+AAwtyOKxdAAMc3luY2hyb25pemVkc3EAfgAMT8FzhHQADSRpc0luc3RhbmNlT2ZzcQB+AAy83aHfdAACPj1zcQB+AAyxPLMYdAAMc2V0Q29tcGxldGVkc3EAfgAM+xFZxHQACW5vdGlmeUFsbHNxAH4ADFoEWNp0AAdnZXROYW1lc3EAfgAMrIOxWXQACFRvRG9JdGVtc3EAfgAMmNpSH3QACWNvbXBhcmVUb3NxAH4ADNeFAYB0AAxpc0luc3RhbmNlT2ZzcQB+AAyVU8LydAAGPGluaXQ+c3EAfgAMg7MM+3QAAmlkc3EAfgAMVMqJ/XQACWNvbXBsZXRlZHNxAH4ADB0oEHt0AAI9PXNxAH4ADE6GW+Z0AAVjbG9uZXNxAH4ADPJhYAh0AAh0b1N0cmluZ3NxAH4ADLOsI1J0AAIhPXNxAH4ADKvhp790AAhnZXRDbGFzc3NxAH4ADDL4zuZ0AAJuZXNxAH4ADJcnv8B0AAVnZXRJZHNxAH4ADDpGA/10AAJlcXNxAH4ADIabHHR0AAdjb21wYXJlc3EAfgAMSU8/xnQAAT5zcQB+AAwIy1PcdAACIyNzcQB+AAxY/HTLdAAIZmluYWxpemVzcQB+AAykqVSNdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBfeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAObW9kZWwuVG9Eb0l0ZW11cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAAF0AAxzY2FsYS5uYXRpdmVzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AHl4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AHgAcHNxAH4AfXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBfTAAJaW5oZXJpdGVkcQB+AF9MAAdwYXJlbnRzcQB+AF94cQB+AIFzcQB+AHgAcHNxAH4AfXVxAH4AWgAAAABzcQB+AHgAcHNxAH4AfXVxAH4AWgAAAABzcQB+AHgAcHNxAH4AfXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAAEc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTtbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+AIBzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXhxAH4AknhxAH4AgHQAB09yZGVyZWRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AIBzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3EAfgCgdAAEbWF0aHNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgChdXEAfgCPAAAAAXNxAH4AlXQACFRvRG9JdGVtc3EAfgCYc3EAfgCbdXEAfgCeAAAAAnNxAH4AoHQABW1vZGVscQB+AKdzcQB+AJFzcQB+AJV0AApDb21wYXJhYmxlc3EAfgCYc3EAfgCbdXEAfgCeAAAAA3NxAH4AoHQABGphdmFzcQB+AKB0AARsYW5ncQB+AKd1cQB+AI8AAAABcQB+AKlzcQB+AJV0AAZPYmplY3RxAH4As3NxAH4AlXQAA0FueXNxAH4AmHNxAH4Am3VxAH4AngAAAAJzcQB+AKBxAH4Ao3EAfgCndXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAFbW9kZWxzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAWCCwafidXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAU0k6XFByb2plY3RzXFdvcmtzcGFjZVxHcmFkbGVJbkFjdGlvblxHcmFkbGVJbkFjdGlvbkNoMTFfMDRcbW9kZWxcYnVpbGRcY2xhc3Nlc1xtYWludAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU5eON3sP39No1NGZ3vhLsnPbyCK8=
+external apis:
+0 items
+source infos:
+1 items
+I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> 
+AAAAAAAAAAA=
+compilations:
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYILBp+J1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAU0k6XFByb2plY3RzXFdvcmtzcGFjZVxHcmFkbGVJbkFjdGlvblxHcmFkbGVJbkFjdGlvbkNoMTFfMDRcbW9kZWxcYnVpbGRcY2xhc3Nlc1xtYWludAABLw==

@@ -1,0 +1,15 @@
+project.ext.myProp = 'myValue'
+
+ext {
+	someOtherProp = 123
+}
+
+assert myProp == 'myValue'
+println project.someOtherProp
+ext.someOtherProp = 567
+
+assert project.exampleProp == 'myValue'
+
+task printGradleProperty << {
+	println "Second property: $someOtherProp"
+}

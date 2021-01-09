@@ -1,0 +1,141 @@
+/*buildscript {
+	repositories {
+		jcenter()
+	}
+	dependencies {
+		classpath 'be.luxuryoverdosis.gia:gradle-cloudbees-plugin:0.1'
+	}
+}*/
+
+apply plugin: 'cloudbees'
+
+ext {
+	apiKey = ''
+	secret = ''
+}
+
+if(project.hasProperty('cloudbeesApiKey')) {
+	ext.apiKey = project.property('cloudbeesApiKey')
+}
+if(project.hasProperty('cloudbeesApiSecret')) {
+	ext.secret = project.property('cloudbeesApiSecret')
+}
+
+cloudBees {
+	apiUrl = 'https://api.cloudbees.com/api'
+	apiKey = project.apiKey
+	secret = project.secret
+	appId = 'gradle-in-action/todo'
+}
+
+apply plugin: 'groovy'
+
+archivesBaseName = 'cloudbees-plugin'
+group = 'be.luxuryoverdosis.gia'
+version = '1.0'
+
+task sourcesJar(type: Jar) {
+    baseName 'cloudbees-plugin'
+    classifier 'sources'
+    from sourceSets.main.allSource
+}
+
+task groovydocJar(type: Jar, dependsOn: groovydoc) {
+    baseName 'cloudbees-plugin'
+    classifier 'groovydoc'
+    from groovydoc.destinationDir
+}
+
+artifacts {
+    archives sourcesJar
+    archives groovydocJar
+}
+
+apply plugin: 'distribution'
+
+distributions {
+    main {
+        baseName = archivesBaseName
+
+        contents {
+            from { libsDir }
+        }
+    }
+    
+    docs {
+		baseName = "$archivesBaseName-docs"
+		
+		contents {
+			from(libsDir) {
+				include sourcesJar.archiveName
+				include groovydocJar.archiveName
+			}
+		}
+	}
+}
+
+apply plugin: 'maven-publish'
+
+ext {
+	artifactoryBaseUrl = 'http://localhost:8081/artifactory'
+	artifactorySnapshotRepoUrl = "$artifactoryBaseUrl/libs-snapshot-local"
+	artifactoryReleaseRepoUrl = "$artifactoryBaseUrl/libs-release-local"
+	
+	bintrayBaseUrl = 'https://bintray.com'
+	bintrayRepository = 'gradle-plugins'
+	bintrayPackage = 'gradle-cloudbees-plugin'
+}
+
+publishing {
+	publications {
+		plugin(MavenPublication) {
+			from components.java
+			artifactId 'cloudbees-plugin'
+			
+			pom.withXml {
+				def root = asNode()
+				root.appendNode('name', 'Gradle CloudBees plugin')
+				root.appendNode('description', 'Gradle plugin for managing  applications and databases on CloudBees RUN@cloud.')
+				root.appendNode('inceptionYear', '2013')
+				
+				def license = root.appendNode('licenses').appendNode('license')
+				license.appendNode('name', 'The Apache Software License, Version 2.0')
+				license.appendNode('url', 'http://www.apache.org/licenses/LICENSE-2.0.txt')
+				license.appendNode('distribution', 'repo')
+				
+				def developer = root.appendNode('developers').appendNode('developer')
+				developer.appendNode('id', 'bmuschko')
+				developer.appendNode('name', 'Benjamin Muschko')
+				developer.appendNode('email', 'benjamin.muschko@gmail.com')
+			}
+			
+			artifact sourcesJar
+			artifact groovydocJar
+		}
+	}
+	
+	repositories {
+		/*maven {
+			name 'myLocal'
+			url "file://$projectDir/../repo"
+		}
+		
+		maven {
+			name 'remoteArtifactory'
+			url project.version.endsWith('-SNAPSHOT') ? artifactorySnapshotRepoUrl : artifactoryReleaseRepoUrl
+			credentials {
+				username = artifactoryUsername
+				password = artifactoryPassword
+			}
+		}*/
+		
+		maven {
+			name 'Bintray'
+			url "$bintrayBaseUrl/$bintrayUsername/$bintrayRepository/$bintrayPackage"
+			credentials {
+				username = bintrayUsername
+				password = bintrayApiKey
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+task cleanAnt(type: GradleBuild) {
+	buildFile = 'importedAntBuild.gradle'
+	tasks = ['clean']
+}
+
+apply plugin: 'java'
+
+clean.dependsOn cleanAnt

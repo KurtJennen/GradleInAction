@@ -1,0 +1,23 @@
+
+apply plugin: 'compare-gradle-builds'
+
+allprojects {
+	group = 'be.luxuryoverdosis.gia'
+	version = '0.1'
+}
+
+subprojects {
+	apply plugin: 'java'
+}
+
+compareGradleBuilds {
+	sourceBuild {
+		projectDir = rootProject.projectDir
+		gradleVersion = '1.5'
+	}
+	
+	targetBuild {
+		projectDir = sourceBuild.projectDir
+		gradleVersion = '1.6'
+	}
+}

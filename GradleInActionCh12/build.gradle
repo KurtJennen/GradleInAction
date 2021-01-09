@@ -1,0 +1,60 @@
+buildscript {
+	repositories {
+		maven {
+			url "https://plugins.gradle.org/m2/"
+		}
+	}
+	dependencies {
+		classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.5"
+	}
+}
+
+//apply plugin: 'sonar-runner'
+apply plugin: "org.sonarqube"
+
+sonarqube {
+	properties {
+		property 'sonar.projectName', 'todo'
+		property 'sonar.projectDescription', 'A task management application'
+	}
+}
+
+allprojects {
+    apply plugin: 'idea'
+    group = 'com.manning.gia'
+    version = '0.1'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply from: "$rootDir/gradle/jacoco.gradle"
+    //apply from: "$rootDir/gradle/cobertura.gradle"
+    
+    //ext.configDir = new File(rootDir, 'config')
+    //apply from: "$rootDir/gradle/checkstyle.gradle"
+   
+    //apply from: "$rootDir/gradle/pmd.gradle"
+
+    //apply from: "$rootDir/gradle/findbugs.gradle"  
+    
+    //apply from: "$rootDir/gradle/jdepend.gradle"  
+    
+    repositories {
+        mavenCentral()
+    }
+    
+    sonarqube {
+		properties {
+			property 'sonar.sourceEncoding', 'UTF-8'
+			property 'sonar.core.codeCoveragePlugin', 'cobertura'
+			
+			tasks.withType(SourceTask) { task ->
+				if(task.name == 'testCoberturaReport') {
+					property 'sonar.cobertura.reportPath', new File(task.reportDir, 'coverage.xml')
+				}
+			}
+		}
+	}
+}
+
+

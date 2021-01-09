@@ -1,0 +1,20 @@
+apply plugin: 'cloudbees'
+
+ext {
+	apiKey = ''
+	secret = ''
+}
+
+if(project.hasProperty('cloudbeesApiKey')) {
+	ext.apiKey = project.property('cloudbeesApiKey')
+}
+if(project.hasProperty('cloudbeesApiSecret')) {
+	ext.secret = project.property('cloudbeesApiSecret')
+}
+
+cloudBees {
+	apiUrl = 'https://api.cloudbees.com/api'
+	apiKey = project.apiKey
+	secret = project.secret
+	appId = 'gradle-in-action/todo'
+}

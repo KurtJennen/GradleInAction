@@ -1,0 +1,3 @@
+ant.project.addTarget('clean', new org.apache.tools.ant.Target())
+ant.importBuild '/ant/build.xml'
+apply plugin: 'java'

@@ -1,0 +1,12 @@
+apply plugin: 'groovy'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile project(':model')
+}
+	
+sourceSets.main.java.srcDirs = []
+sourceSets.main.groovy.srcDirs = ['src/main/java', 'src/main/groovy']

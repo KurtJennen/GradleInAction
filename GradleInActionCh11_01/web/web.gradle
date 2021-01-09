@@ -1,0 +1,19 @@
+apply plugin: 'war'
+apply plugin: 'jetty'
+apply from: "$rootDir/gradle/jsDependencies.gradle"
+apply from: "$rootDir/gradle/jsMinification.gradle"
+apply from: "$rootDir/gradle/jsCodeQuality.gradle"
+//apply from: "$rootDir/gradle/jsOptimize.gradle"
+	
+repositories {
+	mavenCentral()
+}
+	
+dependencies {
+	compile project(':repository')
+
+	providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.0'
+	
+	runtime group: 'javax.servlet', name: 'jstl', version: '1.2'
+	runtime group: 'taglibs', name: 'standard', version: '1.1.2'
+}

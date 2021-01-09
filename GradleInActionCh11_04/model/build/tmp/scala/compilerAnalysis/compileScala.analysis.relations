@@ -1,0 +1,9 @@
+products:
+   I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\build\classes\main\model\ToDoItem.class
+binary dependencies:
+   I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> C:\Program Files\Java\jdk1.8.0_152\jre\lib\rt.jar
+   I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> C:\Users\Kurt\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.4\7663f74ef944453c86cc7e6597ed33e9281f6412\scala-library-2.12.4.jar
+source dependencies:
+external dependencies:
+class names:
+   I:\Projects\Workspace\GradleInAction\GradleInActionCh11_04\model\src\main\scala\model\ToDoItem.scala -> model.ToDoItem

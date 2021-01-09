@@ -1,0 +1,10 @@
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+    compile localGroovy()
+    compile gradleApi()
+	compile 'com.cloudbees:cloudbees-api-client:1.4.0'
+	testCompile group: 'org.spockframework', name: 'spock-core', version: '1.1-groovy-2.4'
+}

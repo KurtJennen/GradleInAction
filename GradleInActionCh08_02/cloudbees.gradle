@@ -1,0 +1,51 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	
+	dependencies {
+		classpath 'com.cloudbees:cloudbees-api-client:1.4.0'
+	}
+}
+
+ext {
+	apiUrl = 'https://api.cloudbees.com/api'
+	apiFormat = 'xml'
+	apiVersion = '1.0'
+	apiKey = ''
+	secret = ''
+	appId = ''
+	warFile = 'todo.war'
+}
+
+if(project.hasProperty('cloudbeesApiKey')) {
+	ext.apiKey = project.property('cloudbeesApiKey')
+}
+if(project.hasProperty('cloudbeesApiSecret')) {
+	ext.secret = project.property('cloudbeesApiSecret')
+}
+
+//import plugins.cloudbees.tasks.app.CloudBeesAppInfo
+import plugins.cloudbees.tasks.app.CloudBeesAppInfo1
+import plugins.cloudbees.tasks.app.CloudBeesAppDeployWar
+
+//task cloudBeesAppInfo(type: CloudBeesAppInfo) {
+task cloudBeesAppInfo(type: CloudBeesAppInfo1) {
+    apiUrl = project.apiUrl
+    apiKey = project.apiKey
+    secret = project.secret
+    apiFormat = project.apiFormat
+    apiVersion = project.apiVersion
+    appId = project.hasProperty('appId') ? project.appId : null
+}
+
+task cloudBeesAppDeployWar(type: CloudBeesAppDeployWar) {
+    apiUrl = project.apiUrl
+    apiKey = project.apiKey
+    secret = project.secret
+    apiFormat = project.apiFormat
+    apiVersion = project.apiVersion
+    appId = project.hasProperty('appId') ? project.appId : null
+    message = project.hasProperty('message') ? project.message : null
+    warFile = project.hasProperty('warFile') ? file(project.warFile) : null
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="repository.InMemoryToDoRepositorySpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-07-15T11:44:50" hostname="PC-Kurt" time="0.103">
+  <properties/>
+  <testcase name="Insert To Do item" classname="repository.InMemoryToDoRepositorySpec" time="0.103"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

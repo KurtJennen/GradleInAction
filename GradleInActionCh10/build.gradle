@@ -1,0 +1,29 @@
+allprojects {
+	apply plugin: 'eclipse'
+
+	group = 'be.luxuryoverdosis.gia'
+	version = '0.1'
+}
+
+subprojects {
+	apply plugin: 'java'
+	
+	eclipse {
+		jdt {
+			sourceCompatibility = 1.8
+			targetCompatibility = 1.8
+		}
+		classpath {
+			downloadSources = true
+			downloadJavadoc = true
+		}
+	}
+}
+
+eclipse {
+	project {
+		name = 'todo'
+		comment = 'A task management application'
+		referencedProjects 'model', 'repository', 'web'
+	}
+}

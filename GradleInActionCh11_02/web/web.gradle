@@ -1,0 +1,29 @@
+apply plugin: 'war'
+apply plugin: 'jetty'
+	
+repositories {
+	mavenCentral()
+}
+	
+dependencies {
+	compile project(':repository')
+
+	providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.0'
+	
+	runtime group: 'javax.servlet', name: 'jstl', version: '1.2'
+	runtime group: 'taglibs', name: 'standard', version: '1.1.2'
+}
+
+task installGruntDependencies(type: Exec) {
+    inputs.file 'package.json'
+    outputs.dir 'node_modules'
+
+    executable 'npm'
+    args 'install'
+}
+
+import js.Grunt
+
+task jsHint(type: Grunt, dependsOn: installGruntDependencies) {
+    commands = ['jshint']
+}
